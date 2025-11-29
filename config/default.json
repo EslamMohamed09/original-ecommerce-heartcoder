@@ -1,4 +1,4 @@
 {
-    "port":"3100",
-    "mongodbUrl":"mongodb+srv://eslamelgeneral2019_db_user:mongodb00000@cluster0.m5d8szj.mongodb.net/?appName=Cluster0"
+  "port": "3100",
+  "mongodbUrl": "mongodb+srv://eslamelgeneral2019_db_user:mongodb00000@cluster0.m5d8szj.mongodb.net/ecommerceDB?retryWrites=true&w=majority&appName=Cluster0"
 }
