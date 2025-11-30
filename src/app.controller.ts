@@ -28,12 +28,11 @@ export class AppController {
   @Get('create-product')
   async createProduct() {
     return this.productModel.create({
-      id:'1',
+      id: Date.now().toString(),
       title: 'dell 5580',
       description: 'workstation laptop',
       price: 2500,
       imageUrl:'https://example.com/dell-5580.jpg',
-    }
-    )
+    });
   }
 }
