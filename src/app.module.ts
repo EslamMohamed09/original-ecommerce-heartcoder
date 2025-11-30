@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import config from 'config';
 import { ProductSchema } from './product.schema';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { ProductSchema } from './product.schema';
       },
     }),
     MongooseModule.forFeature([{ name: 'product', schema: ProductSchema }]),
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
